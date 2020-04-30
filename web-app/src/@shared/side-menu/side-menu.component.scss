@@ -1,0 +1,77 @@
+:host {
+  display: block;
+  height: 100%;
+  border-right: 1px solid #f0f0f0;
+  .logo {
+    padding-left: 30px;
+    color: blue;
+    i {
+      cursor: pointer;
+      font-size: 35px;
+      margin-top: 12px;
+      padding: 5px;
+      border-radius: 30px;
+      &:hover {
+        background: #77f5f540;
+        border-radius: 30px;
+      }
+    }
+  }
+  ul {
+    padding: 15px 20px;
+    padding-top: 0;
+    border-right: none;
+    .btn-tweet {
+      padding: 7px 50px;
+      border-radius: 30px;
+      color: white;
+    }
+    .ant-menu-submenu {
+      margin-bottom: 12px;
+      ::ng-deep.ant-menu-submenu-arrow {
+        display: none;
+      }
+      ::ng-deep.ant-menu-submenu-title {
+        &:hover span {
+          color: blue;
+        }
+        &:hover {
+          background: #77f5f540;
+          border-radius: 30px;
+        }
+        span {
+          font-size: 18px;
+          font-weight: bold;
+          color: black;
+        }
+        i {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+  .current-user {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    width: calc(100% - 35px);
+  }
+  .cover-current {
+    display: flex;
+    padding: 8px 11px;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+      background: #77f5f540;
+    }
+    span {
+      padding-left: 10px;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+  }
+}

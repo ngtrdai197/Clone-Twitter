@@ -1,1 +1,11 @@
-<h4>{{ 'hello' | transloco: { name: name } }}</h4>
+<div nz-row>
+  <div nz-col [nzSpan]="6" class="side-menu">
+    <twitter-side-menu></twitter-side-menu>
+  </div>
+  <div nz-col [nzSpan]="11" class="twitter-router">
+    <router-outlet></router-outlet>
+  </div>
+  <div nz-col [nzSpan]="7" style="margin-top: 200px;">
+    Dynamic content
+  </div>
+</div>
