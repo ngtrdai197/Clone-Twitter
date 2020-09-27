@@ -6,11 +6,13 @@ import { NzIconModule } from 'ng-zorro-antd/icon'
 import { NzMenuModule } from 'ng-zorro-antd/menu'
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm'
 import { NzPopoverModule } from 'ng-zorro-antd/popover'
+import { NzGridModule } from 'ng-zorro-antd/grid'
 
 import { SideMenuComponent } from './side-menu/side-menu.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { PostComponent } from './post/post.component'
 
-const COMPONENTS = [SideMenuComponent, PageNotFoundComponent]
+const COMPONENTS = [SideMenuComponent, PageNotFoundComponent, PostComponent]
 
 @NgModule({
   declarations: COMPONENTS,
@@ -22,6 +24,7 @@ const COMPONENTS = [SideMenuComponent, PageNotFoundComponent]
     NzIconModule,
     NzPopoverModule,
     NzPopconfirmModule,
+    NzGridModule,
   ],
   exports: COMPONENTS,
 })
