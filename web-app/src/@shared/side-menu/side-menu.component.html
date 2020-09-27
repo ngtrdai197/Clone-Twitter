@@ -11,12 +11,12 @@
   <li nz-submenu nzTitle="Profile" nzIcon="user"></li>
   <li nz-submenu nzTitle="More" nzIcon="ellipsis"></li>
   <li>
-    <button nz-button nzType="primary" [nzSize]="'large'" class="btn-tweet">
+    <button nz-button nzType="primary" [nzSize]="'large'" class="btn-tweet w-full text-white">
       Tweet
     </button>
   </li>
 </ul>
-<div class="current-user">
+<div class="current-user px-4">
   <div
     nz-button
     nzType="primary"
@@ -26,7 +26,7 @@
     nzPopoverTrigger="click"
     [nzPopoverContent]="contentTemplate"
     [nzPopoverPlacement]="'topLeft'"
-    class="cover-current"
+    class="cover-current flex justify-between cursor-pointer"
   >
     <nz-avatar
       [nzSize]="40"
@@ -41,7 +41,7 @@
 </div>
 
 <ng-template #currentUserTemplate>
-  <div class="cover-current">
+  <div class="cover-current flex justify-between cursor-pointer">
     <nz-avatar
       [nzSize]="40"
       nzSrc="https://avatars2.githubusercontent.com/u/37446552?s=460&u=8b963624889936e0c91bfb32bb11e88037fdee09&v=4"
@@ -50,7 +50,7 @@
       <div>Nguyen Trong Dai</div>
       <div>@ngtrdai197</div>
     </span>
-    <i nz-icon nzType="check" nzTheme="outline"></i>
+    <i nz-icon nzType="check" nzTheme="outline" class="ml-4"></i>
   </div>
 </ng-template>
 
